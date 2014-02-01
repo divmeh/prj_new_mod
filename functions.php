@@ -4,6 +4,7 @@ session_start();
 if(!isset($_SESSION['mname'])) exit('No direct script access allowed');
 
 require_once('connection.php');
+
 class myfunctions{
 
     public function delete($userid){
@@ -20,15 +21,14 @@ class myfunctions{
         //Shoot the query
 //        $query = mysql_query("DELETE FROM members WHERE id=$userid");
 
-        $dQuery = $connect->prepare("DELETE FROM members WHERE id = :userId");
-        $dQuery->bindValues(
-          'bindValue', $userid);
-        die;
-        if($dQuery)
+        $dQuery = $GLOBALS['connect']->prepare("DELETE FROM members WHERE id = :userId");
+
+        $dQuery->bindValue( ':userId', $userid );
+        $dQuery->execute();
+
+        if($dQuery->rowCount());
         header('Location:home.php?msg=User deleted successfully');
         return true;
-
-
     }
 
     public function changestatus($userid){
@@ -42,8 +42,14 @@ class myfunctions{
             header('Location:home.php?msg=You can not disable yourself');
             exit;
         }
-        $query = mysql_query("UPDATE members set isenabled = ".$_GET['cstatus']." WHERE id=$userid");
-        echo "UPDATE members set isenabled = ".$_GET['cstatus']."WHERE id=$userid";
+
+        $cQuery = $GLOBALS['connect']->prepare("UPDATE members set isenabled = :status WHERE id=:userId");
+        $cQuery->execute(array(
+            ':status'=> $_GET['cstatus'],
+            ':userId' => $userid,
+        ));
+        echo $cQuery->rowCount();
+        if($cQuery->rowCount())
         header('Location:home.php?msg=User updated successfully');
         return true;
     }
@@ -89,10 +95,14 @@ class myfunctions{
         $name = '';
 
         //Get the name of the user
-        $searchquery = mysql_query("SELECT * FROM members WHERE id = $userid");
-        $queryresult = mysql_fetch_array($searchquery);
-        echo $name = $queryresult['name'];
-        echo $emailto = $queryresult['email'];
+
+        $searchquery = $GLOBALS['connect']->prepare("SELECT * FROM members WHERE id = :userid");
+        $searchquery->execute(array(':userid' => $userid));
+
+        $queryresult = $searchquery->fetchAll(PDO::FETCH_ASSOC);
+
+        $name = $queryresult['0']['name'];
+        $emailto = $queryresult['0']['email'];
         $subject = 'Password Reset';
         $password = '';
         $funcobj = new myfunctions;
@@ -102,12 +112,19 @@ class myfunctions{
         $body = sprintf("Hi %s,\n\n Your password has been reset successfully. Your new password is %s \n\nRegards,\n\nApplication Admin",$name,$password);
         $altBody = 'This is the body in plain text for non-HTML mail clients';
 
-        if(mysql_num_rows($searchquery) > 0 )
+        if($searchquery->rowCount() > 0 )
 
-            $updatequery = mysql_query("UPDATE members SET password = '$sha1password' WHERE email = '$emailto'");
-            $result = $mailerObj->sendMail($emailto,$name,$subject,$body,$senderEmail,$senderName);
-            header("Location:home.php?msg=$result");
-            if(mysql_affected_rows() < 0)
+         $updatequery = $GLOBALS['connect']->prepare("UPDATE members SET password = :sha1password WHERE email = :email ");
+
+        $updatequery->execute(array(
+
+            'sha1password' => $sha1password,
+            'email' => $emailto
+
+        ));
+        $result = $mailerObj->sendMail($emailto,$name,$subject,$body,$senderEmail,$senderName);
+        header("Location:home.php?msg=$result");
+        if(mysql_affected_rows() < 0)
             header('Location:home.php?msg=Email address does not exist in database');
 
     }
@@ -117,12 +134,20 @@ class myfunctions{
         if($pass != $cpass){
             header('Location:home.php?msg=Password and confirm password does not match.');
         }
-        $searchquery = mysql_query("SELECT * FROM members WHERE name = '$name'");
-        if(mysql_num_rows($searchquery) > 0 )
-            $updatequery = mysql_query("UPDATE members SET password = sha1($pass) WHERE name = '$name'");
-        //    echo "UPDATE members SET password = sha1(\"$pass\") WHERE name = '$name'";
-            if(mysql_affected_rows() < 0){
-                header('Location:home.php?msg=Password could not reset, please try again..');
+
+        $searchQuery = $GLOBALS['connect']->prepare("SELECT * FROM members WHERE name = :name");
+        $searchQuery->execute(array(':name'=> $name));
+
+        if($searchQuery->rowCount() > 0 )
+
+        $updateQuery = $GLOBALS['connect']->prepare("UPDATE members SET password = :pass WHERE name = :name");
+        $updateQuery->execute(array(
+            ':pass' => sha1("$pass"),
+            'name' => $name));
+
+         if($updateQuery->rowCount() < 0){
+
+            header('Location:home.php?msg=Password could not reset, please try again..');
             }
             header("Location:home.php?msg=Password reset successfully");
         }

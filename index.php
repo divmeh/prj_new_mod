@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="jscript.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <style>
 	<style>
 	body{
@@ -16,7 +19,8 @@
 	margin:300px auto;
 	}
     .container{
-     width: 30%;
+     width: 27%;
+
      margin-right: 20%;
      margin-top: 0%;
      box-shadow: 2px 5px 10px 05px rgba(0, 0, 0, 0.29);
@@ -61,10 +65,21 @@
 
         </label>
         <button class="btn btn-primary" type="submit">Go Online!</button><br/><br/>
-        <div id="forgotp"><a href="resetpasswordform.php" target="_top">Forgot Password</a></div><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div id="forgotp"><a href="javascript:void(0)" onclick="mainresetpasswordf()">Forgot Password</a></div><br/><br/><br/><br/><br/><br/><br/><br/>
         <div id="signup" class="form-control">Not Registered yet...<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="signup.php">Sign Up here</a></div>
 
     </form>
+
+    <form method="post" action="resetpassword.php" >
+    <div style="display:none; text-align: center" id="dialogContent" class="modal-dialog" title="Change Password"><br/>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" id='emailc' placeholder="Enter your email" class="text-info"  style="align:center"/><br/><br/>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="Change" class="btn btn-primary btn-success" onclick="gopassword()" />&nbsp;<input type="button" value="Back"class="btn" onclick="goBackbutton()"/><br/><br/>
+    </div>
+    </form>
+
 </div>
 </body>
 </html>

@@ -20,14 +20,15 @@
         padding-top: 16px;
         }
         .mainresetpassword{
-         margin: 10% 30%;
-         width: 40%;
+         /*margin: 10% 30%;*/
+         /*width: 40%;*/
         }
         .form-signin #msg{
         margin-top:10%;
         color: red;
         font-size:18px;
         }
+
         .goback{
         margin-left:20%;
         margin-top:8%;

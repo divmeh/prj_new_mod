@@ -49,3 +49,21 @@ function getNameOfLoggedIn(lnamename){
         return false;
     }
 }
+
+function mainresetpasswordf(){
+
+    $(document).ready(function(){
+
+        $("#dialogContent").css("display","inline");
+        $("#dialogContent").dialog();
+    });
+}
+function gopassword(){
+    
+    var email = $('#emailc').val();
+    if(email == ''){
+        alert('Please enter email to change password');
+        $('#emailc').focus();
+        return false;
+    }
+}

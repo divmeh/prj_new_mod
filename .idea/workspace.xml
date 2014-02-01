@@ -4,13 +4,13 @@
     <list default="true" id="b63af23c-0a31-4b08-895d-98c7096d701e" name="Default" comment="" />
     <ignored path="prj_new.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/signup.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1388566291833" ignored="false" />
-    <file path="/home.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390933256679" ignored="false" />
-    <file path="/style.css" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390674417476" ignored="false" />
-    <file path="/functions.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390933780765" ignored="false" />
+    <file path="/signup.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391274261723" ignored="false" />
+    <file path="/home.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391270709032" ignored="false" />
+    <file path="/style.css" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391275553737" ignored="false" />
+    <file path="/functions.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391270376809" ignored="false" />
     <file path="/connection.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390969334906" ignored="false" />
     <file path="/chklogin.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390969707330" ignored="false" />
-    <file path="/jscript.js" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390674872069" ignored="false" />
+    <file path="/jscript.js" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391278680241" ignored="false" />
     <file path="/a.dummy" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1390839768947" ignored="false" />
     <file path="$PROJECT_DIR$/../4.59.1/__apps/tickets/library/Ticket/class.SWIFT_TicketEmailDispatch.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1387527488708" ignored="false" />
     <file path="$PROJECT_DIR$/../4.59.1/__swift/apps/base/config/language.xml" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1387527570865" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="$PROJECT_DIR$/../4.59.1/__apps/reports/library/Export/class.SWIFT_ReportExport.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1387790121245" ignored="false" />
     <file path="$PROJECT_DIR$/../4.59.1/__swift/library/class.SWIFT.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1388407900951" ignored="false" />
     <file path="$PROJECT_DIR$/../4.59.1/__swift/library/class.SWIFT_Base.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1387885429347" ignored="false" />
-    <file path="/index.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1389175457051" ignored="false" />
+    <file path="/index.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1391278595331" ignored="false" />
     <file path="/logout.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1388063413906" ignored="false" />
     <file path="$PROJECT_DIR$/../4.59.1/__apps/tickets/staff/class.View_Manage.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1388154342722" ignored="false" />
     <file path="$PROJECT_DIR$/../63-4568/__apps/tickets/models/Ticket/class.SWIFT_TicketPost.php" changelist="b63af23c-0a31-4b08-895d-98c7096d701e" time="1388407586784" ignored="false" />
@@ -63,37 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="chklogin.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chklogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="7" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="functions.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="9" selection-start="307" selection-end="307" vertical-scroll-proportion="0.5019305">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="8" selection-start="343" selection-end="351" vertical-scroll-proportion="0.0">
+            <state line="106" column="23" selection-start="3224" selection-end="3224" vertical-scroll-proportion="-6.137931">
               <folding />
             </state>
           </provider>
@@ -102,8 +75,10 @@
       <file leaf-file-name="home.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="7" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="7" column="99" selection-start="169" selection-end="264" vertical-scroll-proportion="-4.827586">
+              <folding>
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +86,7 @@
       <file leaf-file-name="resetpassword.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resetpassword.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
+            <state line="34" column="2" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-16.931034">
               <folding />
             </state>
           </provider>
@@ -120,17 +95,56 @@
       <file leaf-file-name="coreController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/coreController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="-5.5172415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jscript.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="signup.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/signup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="26" selection-start="399" selection-end="416" vertical-scroll-proportion="-12.44">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resetpasswordform.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resetpasswordform.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="23" selection-start="446" selection-end="446" vertical-scroll-proportion="-5.413793">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jscript.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="36" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
+            <state line="61" column="4" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.8214286">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="81" selection-start="2673" selection-end="2679" vertical-scroll-proportion="-11.655172">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MailClass/index.php" />
-        <option value="$PROJECT_DIR$/resetpasswordform.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/fz3temp-3/config.php" />
         <option value="$PROJECT_DIR$/mailerClass.php" />
         <option value="$PROJECT_DIR$/emailpassword.php" />
@@ -155,12 +166,15 @@
         <option value="$PROJECT_DIR$/logout.php" />
         <option value="$PROJECT_DIR$/coreController.php" />
         <option value="$PROJECT_DIR$/resetpassword.php" />
-        <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/jscript.js" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/connection.php" />
         <option value="$PROJECT_DIR$/chklogin.php" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/signup.php" />
+        <option value="$PROJECT_DIR$/home.php" />
+        <option value="$PROJECT_DIR$/resetpasswordform.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/jscript.js" />
       </list>
     </option>
   </component>
@@ -327,12 +341,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ci" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -385,16 +399,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19242424" sideWeight="0.6715928" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19545455" sideWeight="0.6715928" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -468,16 +482,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mailerClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="1" selection-start="1836" selection-end="1836" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/signup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0" />
@@ -493,11 +497,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="9" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="223" column="32" selection-start="7655" selection-end="7655" vertical-scroll-proportion="-8.965517" />
@@ -508,34 +507,6 @@
         <state line="1071" column="20" selection-start="34724" selection-end="34724" vertical-scroll-proportion="0.35270542" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coreController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resetpassword.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="7" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="7" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="8" selection-start="343" selection-end="351" vertical-scroll-proportion="0.0">
@@ -543,23 +514,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chklogin.php">
+    <entry file="file://$PROJECT_DIR$/coreController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="190" selection-end="190" vertical-scroll-proportion="-5.5172415">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jscript.js">
+    <entry file="file://$PROJECT_DIR$/signup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="36" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resetpasswordform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="23" selection-start="446" selection-end="446" vertical-scroll-proportion="-5.413793">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="399" selection-end="416" vertical-scroll-proportion="-12.44">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="9" selection-start="307" selection-end="307" vertical-scroll-proportion="0.5019305">
+        <state line="106" column="23" selection-start="3224" selection-end="3224" vertical-scroll-proportion="-6.137931">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="5" selection-start="1636" selection-end="1636" vertical-scroll-proportion="0.8116761">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="99" selection-start="169" selection-end="264" vertical-scroll-proportion="-4.827586">
+          <folding>
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resetpassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="2" selection-start="1302" selection-end="1302" vertical-scroll-proportion="-16.931034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="81" selection-start="2673" selection-end="2679" vertical-scroll-proportion="-11.655172">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="4" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.8214286">
           <folding />
         </state>
       </provider>

@@ -28,7 +28,6 @@ if(!$_SESSION['mname']){
 </div>
 <?php
 require_once('connection.php');
-//$query = mysql_query('SELECT * FROM members');
 
 $query = $connect->prepare("SELECT * FROM members");
 $query->execute();
@@ -55,8 +54,8 @@ $query->execute();
 </div>
   <div style="display:none; text-align: center" id="dialogContent" class="modal-dialog" title="Change Password"><br/>
 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cpassword"placeholder="Enter new Password" class="text-info"  style="align:center"/><br/><br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="cppassword" placeholder="Confirm Password" class="text-info" style="align:center"/><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="cpassword"placeholder="Enter new Password" class="text-info"  style="align:center"/><br/><br/>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="cppassword" placeholder="Confirm Password" class="text-info" style="align:center"/><br/>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="button" value="Reset" class="btn btn-primary btn-success" id="resetp" onclick='getNameOfLoggedIn("<?php echo $_SESSION['mname']; ?>")'/>&nbsp;<input type="button" value="Back"class="btn" onclick="goBackbutton()"/><br/><br/>
 
