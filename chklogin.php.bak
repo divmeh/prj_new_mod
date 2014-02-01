@@ -1,0 +1,43 @@
+<?php
+session_start();
+require_once('connection.php');
+
+$memail = mysql_real_escape_string($_POST['memail']);
+$mpassword = mysql_real_escape_string($_POST['mpassword']);
+
+if(empty($memail) || empty($mpassword)){
+    header('Location:index.php?authresult=One of the required field is empty');
+    die;
+}
+if(!filter_var($memail,FILTER_VALIDATE_EMAIL)){
+    header('Location:index.php?authresult=Email address is not valid');
+    die;
+}
+
+//Generate its SHA1 hash
+
+$mpassword = sha1($mpassword);
+
+$query = mysql_query("SELECT * FROM members WHERE email = '$memail' AND password = '$mpassword'");
+echo "SELECT * FROM members WHERE email = '$memail' AND password = '$mpassword'";
+echo mysql_num_rows($query);
+die;
+if(mysql_num_rows($query) == 0){
+    header('Location:index.php?authresult=Invalid Email address or Password');
+}else{
+$array = mysql_fetch_array($query);
+	 if($array['isadmin'] == 0){
+        header('Location:index.php?authresult=You do not have admin priveleage');
+		exit;
+    }else{
+    //check if account is enabled
+  
+    if($array['isenabled'] == 0){
+        header('Location:index.php?authresult=Account Disabled..Please contact administrator');
+    }else{
+        $_SESSION['mname'] = $array['name'];
+        header('Location:home.php');
+    }
+  }
+}
+?>

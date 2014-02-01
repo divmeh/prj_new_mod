@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link href="includes/bootstrap.css" rel="stylesheet">
+    <link href="includes/signin.css" rel="stylesheet">
+    <style>
+	 <style>
+	body{
+	width:40%;
+	margin:200px auto;
+	}
+	.loginerror{
+	color:red;
+	}
+	#signup{
+	margin-left: 170px;
+	}
+
+	</style>
+	</style>
+</head>
+<body>
+<div class="container">
+  
+    <form class="form-signin" role="form" method="post" action="chklogin.php">
+	<div class="loginerror">
+         <?php if(isset($_GET['authresult'])){
+          echo $_GET['authresult'];
+            }
+          ?>
+        </div>
+        <h2 class="form-signin-heading">Login</h2>
+        <input type="text" class="form-control" placeholder="Email address" required autofocus name="memail">
+        <input type="password" class="form-control" placeholder="Password" required name="mpassword">
+        <label class="checkbox">
+          <!--  <input type="checkbox" value="remember-me"> Remember me -->
+		  Login as:
+		Staff&nbsp;<input type="radio" name="loginas" value="loginasstaff" checked>
+		Admin&nbsp;<input type="radio" name="loginas" value="loginasadmin/"><br/>
+        </label>
+		<div id="signup">Not Registered yet...</br><a href="">Sign Up here</a></div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Go Online!</button>
+    </form>
+  
+</div>
+</body>
+</html>

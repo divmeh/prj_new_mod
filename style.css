@@ -1,0 +1,40 @@
+		body{
+		margin:5px auto;
+		width:99%;
+		}
+        .main{
+        margin:10px auto;
+		width:75%;
+        height: 40%;
+		text-align:center;
+        box-shadow: 2px 5px 10px 05px rgba(0, 0, 0, 0.29);
+        }
+		.memberinfo{
+		margin-left:73%;
+        }
+        table,th,td{
+        text-align: center;
+        }
+        #message{
+        color:#eea236;
+        padding-top: 16px;
+        }
+        .mainresetpassword{
+         margin: 10% 30%;
+         width: 40%;
+        }
+        .form-signin #msg{
+        margin-top:10%;
+        color: red;
+        font-size:18px;
+        }
+        .goback{
+        margin-left:20%;
+        margin-top:8%;
+        }
+        #title{
+        padding: 10px;
+        }
+        .actionLinks{
+         padding: 10px;
+        }
