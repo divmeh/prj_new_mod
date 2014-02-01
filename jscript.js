@@ -59,7 +59,7 @@ function mainresetpasswordf(){
     });
 }
 function gopassword(){
-    
+
     var email = $('#emailc').val();
     if(email == ''){
         alert('Please enter email to change password');

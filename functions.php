@@ -19,7 +19,6 @@ class myfunctions{
             exit;
         }
         //Shoot the query
-//        $query = mysql_query("DELETE FROM members WHERE id=$userid");
 
         $dQuery = $GLOBALS['connect']->prepare("DELETE FROM members WHERE id = :userId");
 
@@ -124,7 +123,7 @@ class myfunctions{
         ));
         $result = $mailerObj->sendMail($emailto,$name,$subject,$body,$senderEmail,$senderName);
         header("Location:home.php?msg=$result");
-        if(mysql_affected_rows() < 0)
+        if($updatequery->rowCount() < 0)
             header('Location:home.php?msg=Email address does not exist in database');
 
     }
