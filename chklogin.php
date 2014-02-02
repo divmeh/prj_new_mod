@@ -6,8 +6,8 @@ require_once('connection.php');
 $memail = $_POST['memail'];
 $mpassword = $_POST['mpassword'];
 $rememberme = isset($_POST['remember']);
-//print_r($_POST);
-//die;
+
+
 if(empty($memail) || empty($mpassword)){
     header('Location:index.php?authresult=One of the required field is empty');
     die;
@@ -26,9 +26,7 @@ $query->bindValue(':memail',$memail);
 $query->bindValue(':mpassword',$mpassword);
 $query->execute();
 
-//$query = mysql_query("SELECT * FROM members WHERE email = '$memail' AND password = '$mpassword'");
-
-    if($query->rowCount() == 0){
+if($query->rowCount() == 0){
     header('Location:index.php?authresult=Invalid Email address or Password');
 }else{
     $array = $query->fetch(PDO::FETCH_ASSOC);
@@ -39,12 +37,12 @@ $query->execute();
 
     //check if account is enabled
   
-    if($array['isenabled']==0){
-        header('Location:index.php?authresult=Account Disabled..Please contact administrator');
-    }else{
-        if($rememberme==1){
-            setcookie('rememberme',1,time()+3600*24);
-            setcookie('email',$memail,time()+3600*24);
+if($array['isenabled']==0){
+       header('Location:index.php?authresult=Account Disabled..Please contact administrator');
+}else{
+      if($rememberme==1){
+        setcookie('rememberme',1,time()+3600*24);
+        setcookie('email',$memail,time()+3600*24);
         }
         $_SESSION['mname'] = $array['name'];
         $_SESSION['staffid'] = $array['id'];
