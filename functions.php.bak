@@ -48,7 +48,7 @@ class myfunctions{
             ':status'=> $_GET['cstatus'],
             ':userId' => $userid,
         ));
-        
+        echo $cQuery->rowCount();
         if($cQuery->rowCount())
         header('Location:home.php?msg=User updated successfully');
         return true;
