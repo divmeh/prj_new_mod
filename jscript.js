@@ -64,6 +64,6 @@ function gopassword(){
     if(email == ''){
         alert('Please enter email to change password');
         $('#emailc').focus();
-        return false;
+     //   return false;
     }
 }

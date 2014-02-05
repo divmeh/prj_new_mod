@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign up</title>
-<!--	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="jscript.js"></script>
+    <link href="includes/bootstrap.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript" src="jscript.js"></script>
 
     <style type="text/css">
 		.msg{
        color:red;
        }
        .goback{
-        margin-top: 20px;
+        margin-top: 10px;
         text-align: right;
        }
        .main{
@@ -26,6 +29,9 @@
        }
         h2{
             text-align: center;
+        }
+        .form-signin{
+         padding: 10px;
         }
     </style>
 </head>
@@ -44,7 +50,7 @@
             }
 			?>
 			</div>
-            <input type="text" class="form-control" name="name" class="input-small" placeholder="Full Name" required/><br/>
+            <input type="text" class="form-control" name="name" class="input-small" placeholder="Full Name" required maxlength="20"/><br/>
             <input type="text" name="email" class="form-control" autocomplete="off" class="input-small" placeholder="Email address" autocomplete="off"/ required><br/>
             <input type="password" name="pword" autocomplete="off" class="form-control" placeholder="Password" autocomplete="off" required/><br/>
             <input type="password" name="cpword"  class="form-control" autocomplete="off" class="input-small" placeholder="Confirm Password" required/><br/><br/>

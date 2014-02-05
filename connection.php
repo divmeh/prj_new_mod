@@ -11,7 +11,7 @@
 $config['db'] = array(
 'host' => 'localhost',
 'user' => 'root',
-'pass' => 'test',
+'pass' => '',
 'dbname' => 'prj1'
 );
 //echo '<pre>';

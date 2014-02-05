@@ -1,11 +1,15 @@
-<?php if(!isset($_SESSION['mname'])) exit('No direct script access allowed');
+<?php if(isset($_POST['name']) == 0){ exit('No direct script access allowed'); }
 
 require_once 'connection.php';
- $name = mysql_real_escape_string($_POST['name']);
- $email = mysql_real_escape_string($_POST['email']);
- $pword = mysql_real_escape_string($_POST['pword']);
- $cpword = mysql_real_escape_string($_POST['cpword']);
-//print_r($_POST);
+require_once 'mailerClass.php';
+
+$mailerObj = new mailerClass();
+
+ $name = $_POST['name'];
+ $email = $_POST['email'];
+ $pword = $_POST['pword'];
+ $cpword = $_POST['cpword'];
+
 
 if(empty($name) || empty($email) || empty($pword) || empty($cpword)){
  header('Location: signup.php?msg=One of the required field is empty');
@@ -23,20 +27,40 @@ if(empty($name) || empty($email) || empty($pword) || empty($cpword)){
 	header('Location: signup.php?msg=Password does not match');
 	exit;
  }
- 
- $query = mysql_query("SELECT * FROM members where email = '$email'");
 
- if(mysql_num_rows($query) > 0){
+$query = $GLOBALS['connect']->prepare("SELECT * FROM members where email = :email");
+
+$query->execute(array(':email'=> $email));
+
+ if($query->rowCount() > 0){
 	header('Location: signup.php?msg=This email address is already registered, please use different one.');
 	exit;
+
  }else{
- $pword = sha1($pword);
-	$finalquery = mysql_query("INSERT INTO members(name,email,password) VALUES('$name','$email','$pword')");
+
+ $shaPword = sha1($pword);
+     $finalquery = $GLOBALS['connect']->prepare("INSERT INTO members(name,email,password) VALUES(:name,:email,:password)");
+     $finalquery->execute(array(
+        ':name' => $name,
+        ':email' => $email,
+        ':password' => $shaPword
+     ));
+
+     $senderName = 'Application Admin';
+     $senderEmail = 'mehar.kayako@gmail.com';
+     $subject = 'Registration Email';
+     $body = sprintf("Hi %s,\nThank you for registering in our application. Your login details are:\n\nEmail : %s \n Password %s\nRegards,\n\nApplication Admin",$name,$email,$pword);
+     $altBody = 'This is the body in plain text for non-HTML mail clients';
+     $result = $mailerObj->sendMail($email,$name,$subject,$body,$senderEmail,$senderName);
+
  }
- if($finalquery){
+
+if($finalquery->rowCount()){
 	header('Location: signup.php?msg=Registered sucesfully');
  exit;
+
  }else{
+
 	header('Location: signup.php?msg=Sorry! Try again');
  exit;
  }

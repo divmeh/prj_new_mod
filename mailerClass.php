@@ -1,4 +1,4 @@
-<?php if(!isset($_SESSION['mname'])) exit('No direct script access allowed');
+<?php
 /**
  * Send mail class
  *
