@@ -1,22 +1,12 @@
 <?php
-//$connection = mysql_connect('localhost','root','test');
-//if($connection){
-//mysql_select_db('prj1');
-//}else{
-// die(mysql_error());
-//}
-//?>
-<?php
 
 $config['db'] = array(
 'host' => 'localhost',
 'user' => 'root',
-'pass' => '',
+'pass' => 'test',
 'dbname' => 'prj1'
 );
-//echo '<pre>';
-//print_r($config);
-//echo ("Mehar".$config['db']['host']);
+
 try{
 $connect = new PDO("mysql:host=".$config['db']['host'].";dbname=".$config['db']['dbname'],$config['db']['user'],$config['db']['pass']);
 }

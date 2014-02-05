@@ -57,11 +57,9 @@ $query->execute(array(':email'=> $email));
 
 if($finalquery->rowCount()){
 	header('Location: signup.php?msg=Registered sucesfully');
- exit;
-
+	exit;
  }else{
-
 	header('Location: signup.php?msg=Sorry! Try again');
- exit;
+   exit;
  }
 ?>

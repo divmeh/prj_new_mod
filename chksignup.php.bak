@@ -49,7 +49,7 @@ $query->execute(array(':email'=> $email));
      $senderName = 'Application Admin';
      $senderEmail = 'mehar.kayako@gmail.com';
      $subject = 'Registration Email';
-     $body = sprintf("Hi %s,\nThank you for registering in our application. Your login details are:\n\nEmail : %s \n Password %s\n\nRegards,\n\nApplication Admin",$name,$email,$pword);
+     $body = sprintf("Hi %s,\n\nThank you for registering in our application. Your login details are:\n\nEmail : %s \n Password %s\n\nRegards,\n\nApplication Admin",$name,$email,$pword);
      $altBody = 'This is the body in plain text for non-HTML mail clients';
      $result = $mailerObj->sendMail($email,$name,$subject,$body,$senderEmail,$senderName);
 
@@ -57,7 +57,7 @@ $query->execute(array(':email'=> $email));
 
 if($finalquery->rowCount()){
 	header('Location: signup.php?msg=Registered sucesfully');
- exit;
+	exit;
 
  }else{
 
